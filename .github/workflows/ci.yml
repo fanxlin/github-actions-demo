@@ -28,9 +28,9 @@ jobs:
 
   job-3:
     runs-on: ubuntu-latest
-        steps:
-            - name: Show dir
-              uses: ls $GITHUB_WORKSPACE
+    steps:
+      - name: Show dir
+        uses: ls $GITHUB_WORKSPACE
 
 
 
