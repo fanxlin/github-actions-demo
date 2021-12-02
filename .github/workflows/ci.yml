@@ -30,7 +30,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Show dir
-        run: ls ${{GITHUB_WORKSPACE}}
+        run: ls ${{ GITHUB_WORKSPACE }}
 
 
 
