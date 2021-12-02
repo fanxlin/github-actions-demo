@@ -15,3 +15,22 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
+
+  job-2:
+    runs-on:ubuntu-latest
+    steps:
+      -name:checkout repo
+        uses:actions/checkout@v2
+      -name:Install dependency
+        run:npm i
+      -name:Build the project
+        run:npm run build
+
+  job-3:
+    runs-on: ubuntu-latest
+        steps:
+            - name: Show dir
+              uses: ls $GITHUB_WORKSPACE
+
+
+
